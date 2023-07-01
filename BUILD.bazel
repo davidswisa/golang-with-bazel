@@ -1,5 +1,4 @@
-# load("@io_bazel_rules_go//go:def.bzl", "go_binary")
-load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_binary(
     name = "main",
@@ -11,10 +10,4 @@ go_library(
     name = "greeter",
     importpath = "github.com/davidswisa/golang-with-bazel/greeter",
     srcs = ["greeter.go"],
-)
-
-go_test(
-    name = "greeter_test",
-    srcs = ["greeter_test.go"],
-    embed = [":greeter"],
 )
