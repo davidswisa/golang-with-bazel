@@ -5,7 +5,7 @@ tidy:
 
 .PHONY: build
 build:
-	bazel build //:main
+	bazel build //...
 
 .PHONY: run
 run:
@@ -13,4 +13,4 @@ run:
 
 .PHONY: test
 test:
-	bazel test --test_output=all //main
+	bazel test --test_output=all //...
