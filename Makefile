@@ -9,7 +9,7 @@ build:
 
 .PHONY: run
 run:
-	bazel run //:main
+	bazel run projects/go_web
 
 .PHONY: test
 test:
