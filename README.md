@@ -1,1 +1,1 @@
-# golang-with-bazel
+# Golang with Bazel

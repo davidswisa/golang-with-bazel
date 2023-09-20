@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/davidswisa/golang-with-bazel/greeter"
 )
 
+func greet(s string) {
+	fmt.Println("Hello!!! ", s)
+}
+
 func main() {
-	fmt.Println(greeter.Greet())
+	greet("dedi")
+	fmt.Println("Hello!!!")
 }

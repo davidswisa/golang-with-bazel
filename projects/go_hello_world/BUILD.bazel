@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+
+go_library(
+    name = "go_hello_world",
+    srcs = ["hello_world.go"],
+    importpath = " github.com/davidswisa/golang-with-bazel/projects/go_hello_world",
+    visibility = ["//visibility:public"],
+)
